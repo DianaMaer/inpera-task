@@ -6,39 +6,49 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <header></header>
-        <!--form-->
-        <form  method="post" name="google-sheet">
-            <!--name section-->
-            <div>
-                <label for="Name">First Name:</label>
-                <input id="Name" placeholder="John" type="text" name="user_name" required ></input>
-               <!--n <label for="lastName">Last Name:</label>
-                <input id="lastName" placeholder="Smith" type="text" name="last_name" required></input> -->
+        <div id="contact-content">
+            <div id="contatct-data">
+                <h4>KIDCON</h4>
+                <p>Reinhardtstraße 6, 10117 Berlin</p>
+                <p>+075609807123</p>
+                <p>info@kidcon.com</p>
             </div>
-        
-            <!--email section-->
-            <div>
-                <label for="email">Email:</label>
-                <input id="email" placeholder="your email" type="email" name="email" required></input>
-            </div>
-        
-            <!--phone section-->
-            <div>
-                <label for="phone">Phone</label>
-                <input id="phone" placeholder="your phone" type="text" name="phone_number" required></input>
+            <iframe id="map-address" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.526238595855!2d13.38456401536844!3d52.523912379814895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851e9e65a9981%3A0x82195914984919f8!2sReinhardtstra%C3%9Fe%206%2C%2010117%20Berlin!5e0!3m2!1sen!2sde!4v1598033785253!5m2!1sen!2sde" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <!--form-->
+            <form  method="post" name="google-sheet" id="contact-form">
+                <!--name section-->
+                <div>
+                    <label for="Name">Name:</label>
+                    <input id="Name" placeholder="John Smith" type="text" name="user_name" required ></input>
+                <!--n <label for="lastName">Last Name:</label>
+                    <input id="lastName" placeholder="Smith" type="text" name="last_name" required></input> -->
+                </div>
             
-            </div>
-        
-            <!--agreement section-->
-            <div>
-                <label for="message">Your message:</label>
-                <input id="message" placeholder="your text here" type="text" name="message" minlength="20" maxlength="500" required></input>
-            </div>
-            <button type="submit" name="submit">Submit</button>
-        </form>
+                <!--email section-->
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" placeholder="your email" type="email" name="email" required></input>
+                </div>
+            
+                <!--phone section-->
+                <div>
+                    <label for="phone">Phone</label>
+                    <input id="phone" placeholder="your phone" type="number" name="phone_number" required></input>
+                
+                </div>
+            
+                <!--agreement section-->
+                <div>
+                    <label for="message">Message</label>
+                    <input id="message" placeholder="your text here" type="text" name="message" minlength="20" maxlength="500" required></input>
+                </div>
+                <button type="submit" name="submit">Submit</button>
+            </form>
+        </div>
 
         <footer></footer>
 
