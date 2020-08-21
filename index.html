@@ -5,17 +5,18 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        
+        <header></header>
+        <!--form-->
         <form  method="post" name="google-sheet">
             <!--name section-->
             <div>
-                <label for="firstName">First Name:</label>
-                <input id="firstName" placeholder="John" type="text" name="first_name" required ></input>
-                <label for="lastName">Last Name:</label>
-                <input id="lastName" placeholder="Smith" type="text" name="last_name" required></input>
+                <label for="Name">First Name:</label>
+                <input id="Name" placeholder="John" type="text" name="user_name" required ></input>
+               <!--n <label for="lastName">Last Name:</label>
+                <input id="lastName" placeholder="Smith" type="text" name="last_name" required></input> -->
             </div>
         
             <!--email section-->
@@ -30,16 +31,6 @@
                 <input id="phone" placeholder="your phone" type="text" name="phone_number" required></input>
             
             </div>
-            
-            <!--date section
-            <div>
-                <label for="birthdate">Birthdate:</label>
-                <select name="Month">
-                    <option>Month</option>
-                    <option>Feb</option>
-                    <option>March</option>
-                </select>
-            </div>-->
         
             <!--agreement section-->
             <div>
@@ -49,8 +40,10 @@
             <button type="submit" name="submit">Submit</button>
         </form>
 
+        <footer></footer>
+
         <script>
-            const scriptURL =${key};
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwsCum_zuNS3mSQ2WvbAmMR33-bUoBR4nlhMP-GUEH3-SwWJ2Fq/exec'
             const form = document.forms['google-sheet']
           
             form.addEventListener('submit', e => {

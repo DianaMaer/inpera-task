@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}  
+
+body{
+    font-family: ;
+}
+
+    /*header*/
+header{
+    background: palevioletred;
+    height: 300px;
+}/*end header*/
+
+    /*footer*/
+footer{
+    background: palevioletred;
+    height: 100px;
+}/*end header*/
