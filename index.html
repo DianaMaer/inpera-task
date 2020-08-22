@@ -2,59 +2,116 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Contact Kidcon</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <header></header>
+        <header>
+            <div id="logo-nav">
+                <div id="logo">
+                    <a href="#"> <img class="logo-img" src="images/logo5-01.png" alt="logo-kidcon"></a>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Activities</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>  
+            <div id="teaser">
+                <div class="teaser-text">
+                    <h2>Lorem impsum</h2>
+                    <p>Lorem</p>
+                </div>
+                <div class="circle"></div>
+                <div> <img class="semi" src="images/semicircle.png" alt="triangle"></div>
+                <div> <img class="triangle" src="images/triangle.png" alt="triangle"></div>
+             </div>
+            
+
+        </header>
         <div id="contact-content">
             <div id="contact-data">
-                <div id="address-info">
                     <h4>GET IN TOUCH</h4>
-                    <p>Reinhardtstraße 6 <br>10117 Berlin</p>
-                    <p>+075609807123</p>
-                    <p>info@kidcon.com</p>
-                </div>
-                <iframe id="address-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.526238595855!2d13.38456401536844!3d52.523912379814895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851e9e65a9981%3A0x82195914984919f8!2sReinhardtstra%C3%9Fe%206%2C%2010117%20Berlin!5e0!3m2!1sen!2sde!4v1598033785253!5m2!1sen!2sde" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div>
+                        <p>Reinhardtstraße 6 <br>10117 Berlin</p>
+                        <img src="" alt="">
+                    </div>
+                    <div>
+                        <p>+075609807123</p>
+                        <img src="" alt="">
+                    </div>
+                    <div>
+                        <p>info@kidcon.com</p>
+                        <img src="" alt="">
+                    </div>
             </div>
-           
+            <iframe id="address-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.526238595855!2d13.38456401536844!3d52.523912379814895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851e9e65a9981%3A0x82195914984919f8!2sReinhardtstra%C3%9Fe%206%2C%2010117%20Berlin!5e0!3m2!1sen!2sde!4v1598033785253!5m2!1sen!2sde" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <!--form-->
-            <form  method="post" name="google-sheet" id="contact-form">
-                <!--name section-->
+            <form  method="post" name="google-sheet" id="contact-form" autocomplete="off">
+                     <!--name section-->
                 <div class="field-style">
                     <label for="Name">Name <sup>*</sup></label>
-                    <input id="Name" placeholder="John Smith" type="text" name="user_name" required ></input>
-                <!--n <label for="lastName">Last Name:</label>
-                    <input id="lastName" placeholder="Smith" type="text" name="last_name" required></input> -->
+                    <input id="Name" placeholder="John Smith" type="text" name="user_name" autofocus required ></input>
                 </div>
-            
-                <!--email section-->
+                        <!--email section-->
                 <div class="field-style">
                     <label for="email">Email<sup>*</sup></label>
-                    <input id="email" placeholder="your email" type="email" name="email" required></input>
+                    <input id="email" placeholder="email@website.com" type="email" name="email" required></input>
                 </div>
-            
-                <!--phone section-->
+                        <!--phone section-->
                 <div  class="field-style">
                     <label for="phone">Phone</label>
-                    <input id="phone" placeholder="your phone" type="number" name="phone_number" required></input>
+                    <input id="phone" placeholder="01598879034" type="number" name="phone_number" required></input>
                 </div>
-            
-                <!--agreement section-->
+                        <!--text section-->
                 <div class="field-style field-message">
                     <label for="message">Message<sup>*</sup></label>
-                    <textarea id="message" placeholder="your text here" type="text" name="message" minlength="20" maxlength="500" required></textarea>
+                    <textarea id="message" placeholder="Type your message here..." type="text" name="message" minlength="20" maxlength="500" required></textarea>
                 </div>
-                <button type="submit" name="submit">Submit</button>
+                <button type="submit" name="submit" id="form-button" onclick="submit()">Submit</button>
             </form>
         </div>
 
-        <footer></footer>
+        <footer>
+            <div class="footer-logo">
+                <a href="index.html"><img class="img-logo" src="./images/logo33.png" alt="Logo Remote School"></a>
+           </div>
+    
+           <!-- ul div for content-->
+           <div class="content-footer-list">
+                <ul class="footer-col">
+                    <li> <a href="contact.html">Contact</a></li>
+                    <li> <a href="#">Terms of use</a></li>
+                    <li> <a href="#">FAQ</a></li>
+                    <li> <a href="#">Data policy</a></li>
+                </ul> 
+            </div>
+          
+          <!-- ul div  for social media-->
+          <div class="links-social-network">
+            <ul class="social-list">
+                <li><a href="https://www.youtube.com/"><img class="network-icons biger" src="images/icon-youtube-light.svg" alt="Youtube icon"></a></li> 
+                <li><a href="https://github.com/"><img class="network-icons biger" src="images/icon-github-light.svg" alt="Github icon"></a></li> 
+                <li><a href="https://www.linkedin.com/"><img class="network-icons" src="images/icon-linkedin-light.svg" alt="Linkedin icon"></a></li> 
+                <li><a href="https://www.facebook.com/"><img class="network-icons" src="images/icon-fb-light.svg" alt="Facebook icon"></a></li> 
+                <li><a href="https://twitter.com/explore/"><img class="network-icons" src="images/icon-twitter-light.svg" alt="Twitter icon"></a></li> 
+                <li><a href="https://www.instagram.com/"><img class="network-icons biger" src="images/icon-instagram-light.svg" alt="Instagram icon"></a></li> 
+            </ul>
+          </div>
+             
+        </footer>
 
         <script>
+            function submit() { 
+                document.getElementById("contact-form").reset(); 
+            } 
+
             const scriptURL = 'https://script.google.com/macros/s/AKfycbwsCum_zuNS3mSQ2WvbAmMR33-bUoBR4nlhMP-GUEH3-SwWJ2Fq/exec'
             const form = document.forms['google-sheet']
           
@@ -64,6 +121,7 @@
                 .then(response => alert("Thanks for your message. We will contact you soon"))
                 .catch(error => console.error('Error!', error.message))
             })
+
           </script>
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
