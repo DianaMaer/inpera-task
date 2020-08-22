@@ -69,18 +69,21 @@ nav li a:hover{
     border-bottom: 3px solid #F8650A;
 }
 .circle{
-    height: 350px;
-    width: 350px;  
     border-radius: 50%;
     background: rgb(246,24,18);
     background: linear-gradient(37deg, rgba(246,24,18,1) 0%, 
         rgba(253,29,29,1) 46%, rgba(248,101,10,1) 100%);
-    position: absolute;
-    top: -15px;
-    right: 32%;
     -webkit-box-shadow: 35px 24px 88px -21px rgba(246,24,18,0.8);
 -moz-box-shadow: 35px 24px 88px -21px rgba(246,24,18,0.8);
 box-shadow: 35px 24px 88px -21px rgba(246,24,18,0.8);
+}
+
+.circle-big{
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    top: -15px;
+    right: 32%; 
 }
 
 .triangle{
@@ -137,21 +140,30 @@ box-shadow: 35px 24px 88px -21px rgba(246,24,18,0.8);
     text-align: right;
     display: flex;
     flex-direction: column;
-    background: bisque;
     margin: auto 0;
     align-content: space-between;
     align-self: center;
-    padding: 30px 150px 30px 0;
+    padding: 30px 130px 30px 0;
 }
 
 #contact-data h4{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 #contact-data p{
-    margin: 10px 0;
+    margin: 15px 0;
     font-size: 1rem;
     font-weight: 300;
+}
+.address-container{
+    display: flex;
+    align-self: end;
+}
+.contact-icons{
+    width: 35px;
+    height: 35px;
+    align-self: center;
+    margin-left: 10px;
 }
 
 #address-map{
@@ -238,14 +250,47 @@ input[type=number]{
 
     /*footer*/
 .square{
-    width: 65px;
-    height: 65px;
+    /*width: 50px;
+    height: 50px;
     border-radius: 2px;
     background: rgb(246,24,18);
+    transform: rotate(78deg);*/
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 90px solid red;
+    transform: rotate(170deg);
     position: absolute;
     bottom: 160px;
-    left: 16%;
-    transform: rotate(190deg);
+    left: -25px;
+  
+}
+
+.circle-small{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 130px;
+    left: 7%;
+}
+
+.circle-small-green{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    bottom: 120px;
+    left: 12%;
+    background: #1aba5b;
+}
+
+.circle-small-orange{
+    background: #f88d0a;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 260px;
+    left: -25px;
 }
 
 footer{
