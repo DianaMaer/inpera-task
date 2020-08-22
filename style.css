@@ -197,9 +197,10 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 } 
+
 input[type=number]{
     -moz-appearance: textfield;
-  }
+}
 
 .field-style{
     border-bottom: 1px solid black;
@@ -236,15 +237,29 @@ input[type=number]{
 
 
     /*footer*/
+.square{
+    width: 65px;
+    height: 65px;
+    border-radius: 2px;
+    background: rgb(246,24,18);
+    position: absolute;
+    bottom: 160px;
+    left: 16%;
+    transform: rotate(190deg);
+}
+
 footer{
     display: flex;
-    justify-content: space-around;
-    padding: 30px 20px;
-    height: 100px;
+    justify-content: space-between;
+    padding: 50px 20px;
+    height: 150px;
+    margin-top: 50px;
+    position: relative;
 }
 
 .content-footer-list{
     align-self: center;
+    width: 35%;
 }
 
 .footer-col{
@@ -255,12 +270,12 @@ footer{
 
 .footer-col li{
     list-style: none;
-    margin: 0;
 }
 
 .footer-col li a{
-    padding: 0 25px;
-    font-size: 1.125rem; 
+    font-size: 1rem; 
+    font-weight: 500;
+    color: #25242c;
 }
 
 .footer-col a{
@@ -268,18 +283,18 @@ footer{
 }
 
 .footer-col a:hover{
+    font-weight: 300;
 }
 
 .footer-logo{
     align-self: center;
+    width: 20%;
 }
 
-.footer-logo:hover{
+
+.logo-img-footer{
+     width: 130px;
  }
-
-.img-logo {
-    width: 65%;
-}
 
 .network-icons{
     width: 30px;
@@ -287,18 +302,22 @@ footer{
 }
 
 .network-icons:hover{
-   /* filter: invert(80);*/
    filter: brightness(0.7);
 }
 
-.biger{
-    width: 40px;
-    height: 40px; 
+.ic-biger{
+    width: 35px;
+    height: 35px; 
+}
+
+.ic-biger-y{
+    width: 50px;
+    height: 50px; 
 }
 
 .links-social-network{
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .links-social-network p{
@@ -316,20 +335,24 @@ footer{
 
 .social-list li{
     margin: 0;
-    padding: 0 15px 0 0;
+    padding-left: 35px;
 }
 
-.social-list li a{
-    padding: 5px 20px;
+.ic-y{
+    transform: rotate(190deg);
 }
 
-.social-list li a:nth-child(1){
-    padding-left: 0px;
+.ic-f{
+    transform: rotate(350deg);
 }
-.social-list li a:last-child{
-    padding-right: 0px;
+
+.ic-t{
+    transform: rotate(30deg);
+}
+
+.ic-i{
+    transform: rotate(170deg);
 }
 
 /*--End Footer section --*/
 
-}/*end header*/
